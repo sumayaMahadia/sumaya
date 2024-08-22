@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoNames API Example</title>
+    <meta name="description" content="Max PHP/JSON sample">
+    <meta name="author" content="Paddy Evans">
+    <link rel="stylesheet" href="libs/css/style.css">
+</head>
+<body>
+    <h1>GeoNames API Example</h1>
+
+    <!-- Search API -->
+    <h2>Search API</h2>
+    <select id="selCountry">
+        <option value="GB">Great Britain</option>
+        <option value="FR">France</option>
+        <option value="DE">Germany</option>
+        <option value="US">USA</option>
+    </select>
+    <input type="text" id="searchQuery" placeholder="Search Query">
+    <input type="number" id="maxRows" value="10" placeholder="Max Rows">
+    <button id="btnSearch">Search</button>
+    <div id="searchResult"></div>
+
+    <!-- Time Zone API -->
+    <h2>Time Zone API</h2>
+    <input type="text" id="lat" placeholder="Latitude">
+    <input type="text" id="lng" placeholder="Longitude">
+    <button id="btnTimeZone">Get Time Zone</button>
+    <div id="timeZoneResult"></div>
+
+    <!-- Country Info API -->
+    <h2>Country Info API</h2>
+    <input type="text" id="countryCode" placeholder="Country Code (e.g., GB)">
+    <input type="text" id="lang" value="en" placeholder="Language">
+    <button id="btnCountryInfo">Get Country Info</button>
+    <div id="countryInfoResult"></div>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+
+</body>
+</html>
