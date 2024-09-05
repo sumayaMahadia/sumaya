@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.w-100 {
+  width: 100%;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.select-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+}
+body {
+  overflow: hidden;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.flag {
+  width: 120px;
+}
+
+.wikiLinks a,
+.news-link a {
+  word-wrap: break-word;
+  color: #000;
+  color: light;
+}
+
+.row-styling {
+  font-size: 16px;
+}
+tbody {
+  font-size: 14px;
+}
+
+.svg-inline--fa {
+  font-size: 1.5em;
+  margin-top: 20%;
+}
+.fa-globe {
+  color: rgb(48, 188, 130);
+}
+.fa-cloud {
+  color: rgba(137, 114, 114, 0.807);
+}
+.fa-info {
+  color: rgb(212, 4, 4);
+}
+.fa-umbrella-beach {
+  color: rgb(241, 13, 131);
+}
+
+.fa-newspaper {
+  color: rgb(10, 10, 228);
+}
+
+.city-marker svg {
+  color: rgb(171, 23, 109) !important;
+}
+
+.caption {
+  font-size: 14px;
+}
+
+#wrapper-bg {
+  background-image: url("img/clouds.gif");
+  width: 100%;
+  background-size: cover;
+}
+.modal-body {
+  height: 100%;
+  overflow: auto;
+  padding: 0 0.75rem;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #56829e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
